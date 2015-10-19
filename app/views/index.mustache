@@ -1,0 +1,188 @@
+{{> header }}
+<input type="password" style="display:none">
+	<span id="numpadspan-btn" class="ui-btn ui-icon-grid ui-btn-icon-notext ui-alt-icon ui-nodisc-icon">&nbsp;</span>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <header>
+                <h1>Secure information vault</h1>
+                <p>Not to be used on shared computers or public WiFi networks.</p>
+            </header>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8 col-md-push-2">
+            <div class="data-group">
+                <div class="data-group-title">
+                    <h3>Cards</h3>
+                    <form class="nosubmit">
+                        <input autocomplete="false" type="password" placeholder="Password">
+                        <!--
+                        <span class="btn">Decrypt</span>
+                        -->
+                    </form>
+                    <span class="v-btn green add-btn">Add</span>
+                    <span class="v-btn red delete-btn">Delete</span>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4></h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4></h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4></h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-8 col-md-push-2">
+            <div class="data-group">
+                <h3>Social accounts</h3>
+                <span class="v-btn">Decrypt</span>
+                <span class="v-btn green">Add</span>
+                <span class="v-btn red">Delete</span>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Facebook</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Twitter</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Instagram</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-8 col-md-push-2">
+            <div class="data-group">
+                <h3>Website accounts</h3>
+                <span class="v-btnbtn">Decrypt</span>
+                <span class="v-btnbtn green">Add</span>
+                <span class="v-btnbtn red">Delete</span>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Mailchimp</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Nexmo</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 col-md-push-2">
+            <div class="data-group">
+                <h3>Hosting accounts</h3>
+                <span class="btn">Decrypt</span>
+                <span class="btn green">Add</span>
+                <span class="btn red">Delete</span>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Mailchimp</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 col-xs-12 reset">
+                        <div class="padded">
+                            <div class="data-box">
+                                <div class="title">
+                                    <h4>Nexmo</h4>
+                                </div>
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-8 col-md-push-2">
+            <button id="add-group">Add vault group</button>
+        </div>
+    </div>
+</div>
+<script>
+    var salt = '34f8d9c9b1abdc7f280c5af1ae09593b';
+</script>
+{{> partials }}
+{{> footer }}

@@ -1,0 +1,4 @@
+{   
+    "ignore": ["public/css/build", "public/js/build", "node_modules"],
+    "ext": "mustache,js,scss"
+}

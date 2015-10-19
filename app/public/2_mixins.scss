@@ -1,0 +1,37 @@
+@mixin transition($value...) {
+  transition:$value;
+  -webkit-transition:$value;
+  -moz-transition:$value;
+  -o-transition:$value;
+}
+@mixin transform($value...) {
+  -webkit-transform: $value;
+  -moz-transform:    $value;
+  -ms-transform:     $value;
+  -o-transform:      $value;
+  transform:         $value;
+}
+@mixin filter($value) {
+  -webkit-filter: blur($value);
+  -moz-filter: blur($value);
+  -o-filter: blur($value);
+  -ms-filter: blur($value);
+  filter: blur($value);
+}
+@mixin placeholder($identifier, $colour) {
+  #{$identifier}::-webkit-input-placeholder { 
+      color: $colour;
+  }
+  #{$identifier}:-moz-placeholder { 
+     color: $colour;
+     opacity:  1;
+  }
+  #{$identifier}::-moz-placeholder {
+     color: $colour;
+     opacity:  1;
+  }
+  #{$identifier}:-ms-input-placeholder {
+     color: $colour;
+  }
+}
+

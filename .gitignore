@@ -1,0 +1,5 @@
+npm-debug.log
+docs/*
+node_modules/*
+access.log
+lib/methods/api.js
